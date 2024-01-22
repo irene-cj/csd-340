@@ -5,7 +5,7 @@
 }
 
 h1, h2, h3, h4 {
-    background-color: #3498db; /* Blue background color */
+    background-color: #3498db !important; /* Blue background color */
     color: #fff; /* White font color */
     border: 1px solid #D6A800;
     padding: 10px;
