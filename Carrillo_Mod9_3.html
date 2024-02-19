@@ -1,0 +1,49 @@
+<!-- Irene Carrillo Jaramillo, Module 2.2 Assignment -->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Irene Carrillo Jaramillo">
+    <meta name="description" content=" A summary of my life.">
+    <meta name="keywords" content="HTML, CSS, development, CSD 340">
+    <link rel="stylesheet"  href="Carrillo_Mod9_3.css" />
+    <title> CSD 340 Development with HTML and CSS </title>
+    <script>
+        function replaceText1() {
+            document.getElementById("word1").innerHTML = "Filled";
+        }
+        function replaceText2() {
+            document.getElementById("word2").innerHTML = "Text";
+        }
+        function replaceText3() {
+            document.getElementById("word3").innerHTML = "Here";
+        }
+        function replaceText4() {
+            document.getElementById("word4").innerHTML = "Now";
+        }
+    </script>
+
+</head>
+<body> 
+    <div id="container">
+        <h1> Assignment 9.3 - JavaScript - Part 1</h1>
+        <h2>A brief narrative</h2>
+        <p>Once upon a time, in a quiet little town nestled between rolling hills and lush greenery, there lived a young dreamer named Lucy. Her days were filled with wanderlust, her heart yearning for adventures far beyond.</p>
+        <p>With a curious mind and a thirst for knowledge, Lucy embarked on a journey of self-discovery. Along the winding paths of life, she stumbled upon the enchanting realm where the stars lead her to a beautiful beach.</p>
+        <p>Through perseverance and passion, Lucy learned about the new land and built a better life of herself.</p>
+        <hr />
+        <span id="word1">______</span><button onclick="replaceText1()">Replace</button><br>
+        <span id="word2">______</span><button onclick="replaceText2()">Replace</button><br>
+        <span id="word3">______</span><button onclick="replaceText3()">Replace</button><br>
+        <span id="word4">______</span><button onclick="replaceText4()">Replace</button><br>
+
+
+        <address>
+            <p> <a href="https://www.bellevue.edu/">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+</body>
+</html>
