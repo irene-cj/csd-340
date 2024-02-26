@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <style>
+    .image-container {
+      display: flex;
+    }
+
+    .image-container img {
+      margin-right: 10px;
+      width: 150px; 
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+  <div>
+    <a href="#" onmouseover="changeDarkImage('dark2.jpeg');" onmouseout="resetDarkImage();">
+      <img border="0" name="dark" src="dark.jpeg" width="150" height="auto">
+    </a>
+  </div>
+  
+  <div>
+    <a href="#" onmouseover="changeMoonImage('beach2.jpeg');" onmouseout="resetMoonImage();">
+      <img border="0" name="moon" src="beach.jpeg" width="150" height="auto">
+    </a>
+  </div>
+ 
+  </div>
+
+  <script>
+
+    function changeDarkImage(src) {
+      console.log("Changing dark image to:", src);
+      document.getElementsByName("dark")[0].src = src;
+    }
+
+    function resetDarkImage() {
+      console.log("Resetting dark image");
+      document.getElementsByName("dark")[0].src = "dark.jpeg";
+    }
+
+    function changeMoonImage(src) {
+      console.log("Changing moon image to:", src);
+      document.getElementsByName("moon")[0].src = src;
+    }
+
+    function resetMoonImage() {
+      console.log("Resetting moon image");
+      document.getElementsByName("moon")[0].src = "beach.jpeg"; // Resetting back to the original image
+    }
+  </script>
+</body>
+
+</html>
