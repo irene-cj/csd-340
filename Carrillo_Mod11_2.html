@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <input type="text" id="taskInput">
+    <button onclick="addTask()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="displayTasks()">Display</button>
+
+    <script>
+        let tasks = [];
+
+        // This is the function to add task to the array.
+        function addTask() {
+            let taskInput = document.getElementById("taskInput").value;
+            tasks.push(taskInput);
+            alert("Task '" + taskInput + "' added at position " + tasks.length);
+            document.getElementById("taskInput").value = ""; 
+        }
+
+        // This is the function to delete last task from the array.
+        function deleteLast() {
+            if (tasks.length === 0) {
+                alert("No tasks to delete!");
+            } else {
+                let deletedTask = tasks.pop(); 
+                alert("Task '" + deletedTask + "' deleted from position " + (tasks.length + 1));
+            }
+        }
+
+        
+        function displayTasks() {
+            if (tasks.length === 0) {
+                alert("No tasks to display!");
+            } else {
+                let displayString = "";
+                for (let i = 0; i < tasks.length; i++) {
+                    displayString += (i + 1) + ". " + tasks[i] + "\n";
+                }
+                alert("Tasks:\n" + displayString);
+            }
+        }
+    </script>
+</body>
+</html>
